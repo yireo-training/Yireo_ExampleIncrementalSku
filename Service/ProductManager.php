@@ -1,10 +1,10 @@
 <?php
-namespace Yireo\ExampleIncrementalSku\Model;
+namespace YireoTraining\ExampleIncrementalSku\Model;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
-use Yireo\ExampleIncrementalSku\Factory\ProductFactory;
+use YireoTraining\ExampleIncrementalSku\Factory\ProductFactory;
 
 class ProductManager
 {

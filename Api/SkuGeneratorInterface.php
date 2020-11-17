@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Yireo\ExampleIncrementalSku\Api;
+namespace YireoTraining\ExampleIncrementalSku\Api;
 
 interface SkuGeneratorInterface
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Yireo\ExampleIncrementalSku\Test\Live\Api;
+namespace YireoTraining\ExampleIncrementalSku\Test\Live\Api;
 
-use Yireo\ExampleIncrementalSku\Api\SkuGeneratorInterface;
-use Yireo\ExampleIncrementalSku\Test\Live\TestCase;
+use YireoTraining\ExampleIncrementalSku\Api\SkuGeneratorInterface;
+use YireoTraining\ExampleIncrementalSku\Test\Live\TestCase;
 
 class SkuGeneratorTest extends TestCase
 {

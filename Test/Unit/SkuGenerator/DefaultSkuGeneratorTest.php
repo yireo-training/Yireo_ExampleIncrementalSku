@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Yireo\ExampleIncrementalSku\Test\Unit\SkuGenerator;
+namespace YireoTraining\ExampleIncrementalSku\Test\Unit\SkuGenerator;
 
 use PHPUnit\Framework\TestCase;
-use Yireo\ExampleIncrementalSku\SkuGenerator\DefaultSkuGenerator;
+use YireoTraining\ExampleIncrementalSku\SkuGenerator\DefaultSkuGenerator;
 
 class DefaultSkuGeneratorTest extends TestCase
 {

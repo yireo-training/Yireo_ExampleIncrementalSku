@@ -1,8 +1,8 @@
 <?php
 
-namespace Yireo\ExampleIncrementalSku\SkuGenerator;
+namespace YireoTraining\ExampleIncrementalSku\SkuGenerator;
 
-use Yireo\ExampleIncrementalSku\Api\SkuGeneratorInterface;
+use YireoTraining\ExampleIncrementalSku\Api\SkuGeneratorInterface;
 
 class DefaultSkuGenerator implements SkuGeneratorInterface
 {

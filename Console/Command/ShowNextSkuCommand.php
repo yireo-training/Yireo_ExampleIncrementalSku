@@ -2,31 +2,31 @@
 
 declare(strict_types=1);
 
-namespace Yireo\ExampleIncrementalSku\Console\Command;
+namespace YireoTraining\ExampleIncrementalSku\Console\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Yireo\ExampleIncrementalSku\Model\ProductManager;
+use YireoTraining\ExampleIncrementalSku\Util\GetNewSku;
 
 class ShowNextSkuCommand extends Command
 {
     /**
-     * @var ProductManager
+     * @var GetNewSku
      */
-    private $productManager;
+    private $getNewSku;
 
     /**
      * ProductManagerCommand constructor.
-     * @param ProductManager $productManager
+     * @param GetNewSku $getNewSku
      * @param string|null $name
      */
     public function __construct(
-        ProductManager $productManager,
+        GetNewSku $getNewSku,
         string $name = null
     ) {
         parent::__construct($name);
-        $this->productManager = $productManager;
+        $this->getNewSku = $getNewSku;
     }
 
     /**
@@ -34,7 +34,8 @@ class ShowNextSkuCommand extends Command
      */
     protected function configure()
     {
-        $this->setName('yireo:show_next_sku')->setDescription('Tunda example - show the next SKU to be generated');
+        $this->setName('yireo:show_next_sku')
+            ->setDescription('Yireo example - show the next SKU to be generated');
     }
 
     /**
@@ -44,7 +45,7 @@ class ShowNextSkuCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $newProduct = $this->productManager->getNewProduct();
-        $output->writeln('Next product will have SKU: '.$newProduct->getSku());
+        $newSku = $this->getNewSku->get();
+        $output->writeln('Next product will have SKU: ' . $newSku);
     }
 }

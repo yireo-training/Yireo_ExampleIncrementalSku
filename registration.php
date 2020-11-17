@@ -4,6 +4,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Yireo_ExampleIncrementalSku',
+    'YireoTraining_ExampleIncrementalSku',
     __DIR__
 );

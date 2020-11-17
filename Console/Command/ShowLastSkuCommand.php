@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Yireo\ExampleIncrementalSku\Console\Command;
+namespace YireoTraining\ExampleIncrementalSku\Console\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Yireo\ExampleIncrementalSku\Util\GetLastSku;
+use YireoTraining\ExampleIncrementalSku\Util\GetLastSku;
 
 class ShowLastSkuCommand extends Command
 {

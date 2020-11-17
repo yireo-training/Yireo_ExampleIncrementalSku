@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Yireo\ExampleIncrementalSku\Util;
+namespace YireoTraining\ExampleIncrementalSku\Util;
 
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 use Magento\Framework\Api\SortOrderFactory;
-use Yireo\ExampleIncrementalSku\Api\SkuGeneratorInterface;
+use YireoTraining\ExampleIncrementalSku\Api\SkuGeneratorInterface;
 
 class GetNewSku
 {

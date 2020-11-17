@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yireo\ExampleIncrementalSku\Test\Live;
+namespace YireoTraining\ExampleIncrementalSku\Test\Live;
 
 use Magento\Framework\App\ObjectManager;
 use PHPUnit\Framework\TestCase as ParentTestCase;

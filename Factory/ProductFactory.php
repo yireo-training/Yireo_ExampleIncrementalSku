@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Yireo\ExampleIncrementalSku\Factory;
+namespace YireoTraining\ExampleIncrementalSku\Factory;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Framework\ObjectManagerInterface;
-use Yireo\ExampleIncrementalSku\Util\GetNewSku;
+use YireoTraining\ExampleIncrementalSku\Util\GetNewSku;
 
 class ProductFactory
 {
